@@ -1,0 +1,274 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 5rem;
+  z-index: 101;
+  background: var(--global-color-secondary);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 80rem;
+  height: 100%;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  z-index: 4;
+}
+
+.logoContainer a {
+  text-decoration: none;
+}
+
+.logoContainer a h1 {
+  color: var(--global-color-primary);
+}
+
+.navlink {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  height: 3rem;
+  max-width: 20rem;
+  list-style: none;
+}
+
+.navlink li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navlink li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+  text-decoration: none;
+}
+
+.navlink li:nth-child(5) {
+  position: relative;
+}
+
+.navlink li:nth-child(5) h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--global-color-primary);
+}
+
+.hambargar {
+  display: none;
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  z-index: 3;
+}
+
+.hamb {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  list-style: none;
+  padding-top: 6rem;
+  gap: 4rem;
+}
+
+.hamb a {
+  text-decoration: none;
+}
+
+.hamb * {
+  color: var(--global-color-primary);
+
+}
+
+.hambargar span:nth-child(1),
+.delHamb span:nth-child(2) {
+  position: absolute;
+  top: 2.2rem;
+  right: 0;
+  width: 3rem;
+  height: .1rem;
+  background-color: var(--global-color-primary);
+  transition: all .5s ease;
+}
+
+.hambargar span:nth-child(2),
+.delHamb span:nth-child(2) {
+  position: absolute;
+  top: 3.7rem;
+  right: 0;
+  width: 2.5rem;
+  height: .1rem;
+  background-color: var(--global-color-primary);
+  transition: all .5s ease;
+}
+
+.hambargar span:nth-child(3),
+.delHamb span:nth-child(2) {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  width: 2rem;
+  height: .1rem;
+  background-color: var(--global-color-primary);
+  transition: all .5s ease;
+}
+
+.socialLink {
+  position: absolute;
+  top: 90vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+.socialLink li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+}
+
+.socialLink li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 2rem;
+}
+
+.socialLink li a * {
+  color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  width: 70%;
+  height: 70%;
+}
+
+.socialLink li:hover * {
+  background-color: white;
+  color: var(--global-color-secondary);
+  transition: all .3s ease-out;
+}
+
+.delHamb {
+  position: relative;
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  z-index: 3;
+}
+
+.delHamb span:nth-child(1) {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  width: 2rem;
+  height: .1rem;
+  transform: rotate(45deg);
+  background-color: var(--global-color-primary);
+  transition: all .5s ease;
+}
+
+.delHamb span:nth-child(2) {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  width: 2rem;
+  height: .1rem;
+  transform: rotate(-45deg);
+  background-color: var(--global-color-primary);
+  transition: all .5s ease;
+}
+
+.delHamb span:nth-child(3) {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  width: 0rem;
+  height: .1rem;
+  transition: all .1s ease;
+} 
+
+@media only screen and (max-width: 1024px) and (min-width: 640px) {
+  .logoContainer {
+    width: 45%;
+  }
+
+  .navlink {
+    width: 45%;
+  }
+} 
+
+@media only screen and (max-width: 640px) and (min-width: 480px) { 
+  .container {
+    width: 90%;
+  }
+
+  .hambargar {
+    display: flex;
+    z-index: 3;
+  }
+
+  .navlink {
+    display: none;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 0) {
+  .container {
+    width: 95%;
+  }
+
+  .logoContainer {
+    width: 30%;
+  }
+
+  .hambargar {
+    display: flex;
+    z-index: 3;
+  }
+
+  .navlink {
+    display: none;
+    width: 60%;
+  }
+
+  .socialLink {
+
+  }
+}

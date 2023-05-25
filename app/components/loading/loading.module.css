@@ -1,0 +1,128 @@
+.section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--global-color-secondary);
+  z-index: 100;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.9rem;
+  height: 2.5rem;
+}
+
+.section p {
+  position: relative;
+  font-size: 1.7rem;
+  width: 0;
+  height: 0;
+  left: -2rem;
+  color: white;
+  transition: all 1s ease;
+}
+
+.section p span {
+  position: absolute;
+  top: 5rem;
+  width: 4rem;
+  height: 1.5rem;
+  box-shadow: -2px -72px 42px var(--global-color-secondary);
+  animation: 2s alternate shadow forwards;
+}
+
+.section p {
+  animation: 2s alternate shadow forwards;
+}
+
+@keyframes shadow {
+  0% {
+    color: white;
+    box-shadow: -2px -72px 42px var(--global-color-secondary);
+  }
+
+  25% {
+    color: var(--global-color-primary);
+  }
+  
+  30% {
+    box-shadow: -2px -72px 42px var(--global-color-primary);
+  }
+  
+  40% {
+    box-shadow: -2px -72px 42px var(--global-color-primary);
+  }
+
+  50% {
+    color: var(--global-color-primary);
+    box-shadow: -2px -72px 42px var(--global-color-primary);
+  }
+
+  90% {
+    box-shadow: -2px -72px 42px var(--global-color-secondary);
+  }
+  
+  99% {
+    color: rgb(145, 145, 145);
+  }
+
+  100% {
+    color: rgb(145, 145, 145);
+    box-shadow: -2px -72px 42px var(--global-color-secondary);
+  }
+}
+
+.line {
+  position: absolute;
+  left: -8rem;
+  width: 0rem;
+  bottom: -2rem;
+  height: .2rem;
+  background-color: var(--global-color-primary);
+  animation: 2s alternate loadingLine forwards;
+}
+@keyframes loadingLine {
+  from {
+    width: 0rem;
+  }
+
+  100%{
+    width: 21.1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 0) {
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+  }
+
+  .section p {
+    left: -2rem;
+  }
+
+  .line {
+    left: -1.5rem;
+
+  }
+
+  @keyframes loadingLine {
+    from {
+      width: 0rem;
+    }
+  
+    100%{
+      width: 13.1rem;
+    }
+  }
+}

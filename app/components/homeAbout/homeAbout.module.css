@@ -1,0 +1,285 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4.5rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.title {
+  position: relative;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  left: 3rem;
+  right: 3rem;
+  height: .15rem;
+  bottom: -.7rem;
+  background-color: var(--global-color-primary);
+}
+
+.titleDis {
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 70rem;
+}
+
+.aboutLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 43%;
+  max-width: 30rem;
+  gap: .8rem;
+}
+
+.aboutLeft h1 {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.aboutLeft p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.aboutLeft a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 12rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  color: var(--global-color-primary);
+  border: .1rem solid var(--global-color-primary);
+  text-decoration: none;
+  transition: all .4s ease;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.aboutLeft a:hover {
+  color: white;
+  transition: all .8s ease;
+}
+
+.aboutLeft a span:nth-child(1) {
+  position: absolute;
+  width: 12rem;
+  height: 3rem;
+  left: -13.5rem;
+  background-color: var(--global-color-primary);
+  transition: all .4s ease;
+  z-index: -1;
+}
+
+.aboutLeft a span:nth-child(2) {
+  position: absolute;
+  width: 2rem;
+  height: 3.4rem;
+  left: -2.5rem;
+  bottom: -.8rem;
+  transform: rotate(-30deg);
+  background-color: var(--global-color-primary);
+  transition: all .4s ease;
+  z-index: -1;
+}
+
+.aboutLeft a:hover span:nth-child(1) {
+  left: 0rem;
+  transition: all .8s ease;
+}
+
+.aboutLeft a:hover span:nth-child(2) {
+  left: 11rem;
+  transition: all .8s ease;
+}
+
+.aboutRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 47%;
+  max-width: 31rem;
+}
+
+.aboutRight h1 {
+  padding-left: -1rem;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 2.5rem;
+}
+
+.skills {
+  min-height: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem 1rem;
+  padding-left: 1rem;
+  border-right: 2px solid var(--global-color-lighter);
+  border-top: 2px solid var(--global-color-lighter);
+  border-bottom: 2px solid var(--global-color-lighter);
+  border-left: 2px solid var(--global-color-lighter);
+}
+
+.skill {
+  color: white;
+  background-color: var(--global-color-lighter);
+  font-size: 1.3rem;
+  padding: .6rem 1.5rem;
+  border-radius: .2rem;
+  height: max-content;
+  width: max-content;
+}
+
+.learningMore {
+  padding-left: 1rem;
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 0;
+  margin-top: 2rem;
+  color: var(--global-color-primary);
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 640px) {
+  .section {
+    height: 100%;
+  }
+  
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    gap: 3.5rem;
+  }
+
+  .aboutLeft {
+    width: 100%;
+    max-width: initial;
+  }
+  
+  .aboutRight {
+    width: 100%;
+    max-width: initial;
+  }
+
+  .aboutRight h1 {
+    padding-left: 0;
+  }
+} 
+
+@media only screen and (max-width: 640px) and (min-width: 480px) { 
+  .section {
+    height: 100%;
+  }
+  
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    gap: 3.5rem;
+  }
+
+  .aboutLeft {
+    width: 100%;
+    max-width: initial;
+  }
+  
+  .aboutRight {
+    width: 100%;
+    max-width: initial;
+  }
+
+  .aboutRight h1 {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 0) {
+  .section {
+    height: 100%;
+  }
+  
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    gap: 3.5rem;
+  }
+
+  .title {
+    margin-bottom: .5rem;
+    font-size: clamp(1rem, 10vw, 3rem);
+  }
+
+  .title::after {
+    bottom: -.3rem;
+  }
+
+  .titleDis {
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 6.5vw, 1.66rem);
+  }
+
+  .aboutLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: initial;
+  }
+
+  .aboutLeft p {
+    padding: 0 0rem;
+  }
+
+  .aboutLeft a {
+    margin-top: 1rem;
+  }
+  
+  .aboutRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: initial;
+  }
+
+  .aboutLeft h1 {
+
+  }
+
+  .aboutRight h1 {
+    padding-left: 0;
+  }
+
+  .learningMore {
+    width: 100%;
+  }
+
+  .skill {
+    padding: .5rem .5rem;
+  }
+}
