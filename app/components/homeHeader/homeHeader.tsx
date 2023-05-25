@@ -50,7 +50,7 @@ const HomeHeader = () => {
             </li>
           </ul>
         </div>
-        <Link href='#about' className={styles.spin}>
+        <Link href='/#about' className={styles.spin}>
           <span></span>
           <span></span>
           <span></span>

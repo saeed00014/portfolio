@@ -216,7 +216,7 @@
 
 @media only screen and (max-width: 1024px) and (min-width: 640px) {
   .title h1 {
-    font-size:  clamp(1rem, 5.1vw, 3.2rem);
+    font-size:  clamp(2.9rem, 5.1vw, 3.2rem);
   }
 
   .textContainer p {

@@ -94,6 +94,7 @@
   list-style: none;
   padding-top: 6rem;
   gap: 4rem;
+  background-color: var(--global-color-secondary);
 }
 
 .hamb a {
