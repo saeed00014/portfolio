@@ -8,8 +8,8 @@ import { projects } from '../projectsData'
 import Loading from '../components/loading/loading'
 import { useState } from 'react'
 
-import laptopP1 from '../images/laptopP1.png'
-import phoneP1 from '../images/phonep1.png'
+import laptopP1 from '../images/laptop.png'
+import phoneP1 from '../images/phone.png'
 
 import bodyCard from '../images/bodyCard.png'
 import bodyForm from '../images/bodyForm.png'

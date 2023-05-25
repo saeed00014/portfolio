@@ -3,8 +3,8 @@ import styles from './homeProject.module.css'
 import { projects } from '../../projectsData'
 
 import Image from 'next/image'
-import laptopP1 from '../../images/laptopP1.png'
-import phoneP1 from '../../images/phoneP1.png'
+import laptopP1 from '../../images/laptop.png'
+import phoneP1 from '../../images/phone.png'
 
 import Link from 'next/link'
 

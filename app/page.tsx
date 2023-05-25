@@ -17,19 +17,17 @@ function HomePage() {
   const [isLoading, setLoading] = useState(true)
 
   setTimeout(() => {
-    setLoading(false)
+    setLoading(false);
   }, 1600)
   
   return (
-    <section className={styles.section}>
-      {isLoading && <Loading />}
-      <div className={styles.container}>
+    <div>
+        {isLoading && <Loading />}
         <HomeHeader />
         <HomeAbout />
         <HomeProject />
         <HomeContact />
-      </div>
-    </section>
+    </div>
   )
 }
 

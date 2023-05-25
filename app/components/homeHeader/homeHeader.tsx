@@ -13,11 +13,11 @@ const HomeHeader = () => {
         <div className={styles.content}>
           <div className={styles.textContainer}>
             <div className={styles.h1C}>
-              <h1 className={styles.title}>
+              <div className={styles.title}>
                 <h1>Hi, Im Saeed .</h1> <h1>WebDeveloper</h1> 
                 <span></span>
                 <span></span>
-              </h1>
+              </div>
             </div>
             <div className={styles.pC}>
               <p>Im a Web Developer mainly Focused on
