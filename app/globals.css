@@ -13,14 +13,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth !important;
-  background-color: var(--global-color-secondary);
   color: rgb(255, 255, 255);
 }
 
-.body *, body::after *, body::before * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: var(--global-color-secondary);
-  color: rgb(255, 255, 255);
+html,
+body {
+  background-color: var(--global-color-secondary) !important;
 }
