@@ -18,7 +18,7 @@ function HomePage() {
 
   setTimeout(() => {
     setLoading(false);
-  }, 1600)
+  }, 1200)
   
   return (
     <div>

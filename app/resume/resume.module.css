@@ -37,6 +37,7 @@
   height: 3rem;
   padding-left: 1rem;
   border: 1px solid var(--global-color-primary);
+  background-color: var(--global-color-secondary);
 }
 
 .select p {

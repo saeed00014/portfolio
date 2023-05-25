@@ -10,7 +10,7 @@ const ContactPage = () => {
 
   setTimeout(() => {
     setLoading(false)
-  }, 1600)
+  }, 1200)
 
   return (
     <section className={styles.section}>

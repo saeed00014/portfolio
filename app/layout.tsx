@@ -17,7 +17,7 @@ export default function RootLayout ({
 
   setTimeout(() => {
     setIsLoading(false)
-  }, 1600)
+  }, 1200)
 
   return (
     <html lang="en">
