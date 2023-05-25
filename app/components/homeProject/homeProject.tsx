@@ -4,7 +4,7 @@ import { projects } from '../../projectsData'
 
 import Image from 'next/image'
 import laptopP1 from '../../images/laptopP1.png'
-import phoneP1 from '../../images/phonep1.png'
+import phoneP1 from '../../images/phoneP1.png'
 
 import Link from 'next/link'
 
